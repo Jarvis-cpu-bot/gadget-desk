@@ -28,21 +28,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thegadgetdesk.example"),
-  title: "The Gadget Desk — Verdicts before you pay",
+  metadataBase: new URL("https://nebulameshgate.info"),
+  title: "Nebula Meshgate — Verdicts before you pay",
   description:
     "Independent hardware reviews with the specs that actually change a buying decision. One verdict a week, straight to your inbox, before checkout not after.",
   openGraph: {
-    title: "The Gadget Desk — Verdicts before you pay",
+    title: "Nebula Meshgate — Verdicts before you pay",
     description:
       "Independent hardware reviews with the specs that actually change a buying decision. One verdict a week, before checkout not after.",
     type: "website",
     locale: "en_US",
-    siteName: "The Gadget Desk",
+    siteName: "Nebula Meshgate",
+    url: "https://nebulameshgate.info",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Gadget Desk — Verdicts before you pay",
+    title: "Nebula Meshgate — Verdicts before you pay",
     description:
       "Independent hardware reviews with the specs that actually change a buying decision.",
   },

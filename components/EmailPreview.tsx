@@ -81,9 +81,9 @@ export function EmailPreview() {
                 aria-label="Unread"
                 role="img"
               />
-              <span className="font-semibold">The Gadget Desk</span>
+              <span className="font-semibold">Nebula Meshgate</span>
               <span className="truncate text-[var(--ink)]/55">
-                &lt;debrief@thegadgetdesk.example&gt;
+                &lt;verdict@nebulameshgate.info&gt;
               </span>
               <span className="ml-auto shrink-0 text-xs text-[var(--ink)]/50">
                 8:02 AM

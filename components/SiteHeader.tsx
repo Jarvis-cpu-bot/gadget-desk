@@ -6,7 +6,7 @@ export function SiteHeader() {
           href="#top"
           className="font-display text-[1.05rem] font-semibold uppercase tracking-[0.01em]"
         >
-          The Gadget Desk
+          Nebula Meshgate
         </a>
         <nav aria-label="Primary" className="hidden items-center gap-8 text-sm sm:flex">
           <a href="#verdicts" className="hover:text-[var(--flag)] transition-colors">
