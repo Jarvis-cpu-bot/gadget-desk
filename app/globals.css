@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-archivo-expanded);
+  --font-body: var(--font-archivo);
+  --font-mono: var(--font-ibm-plex-mono);
+
+  --color-seamless: #f2f4f7;
+  --color-seamless-dim: #e9ecf1;
+  --color-body: #1a1d21;
+  --color-shadow-grey: #c8cdd4;
+  --color-review-flag: #ff5c39;
+
+  --color-dark-sweep: #14171a;
+  --color-dark-sweep-raised: #1c2024;
+  --color-dark-body: #eef0f3;
+  --color-dark-line: #383e45;
+}
+
+:root {
+  --bg: var(--color-seamless);
+  --bg-raised: var(--color-seamless-dim);
+  --ink: var(--color-body);
+  --line: var(--color-shadow-grey);
+  --flag: var(--color-review-flag);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--color-dark-sweep);
+    --bg-raised: var(--color-dark-sweep-raised);
+    --ink: var(--color-dark-body);
+    --line: var(--color-dark-line);
+    --flag: #ff7a54;
+  }
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--flag);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--flag);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Caliper tick marks — signature element */
+.caliper-rule {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--ink) 0,
+    var(--ink) 1px,
+    transparent 1px,
+    transparent 12px
+  );
+  background-size: 100% 1px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Shared art-direction grade for every photograph in the build: high-key,
+   lifted blacks, desaturated except the review-flag orange stays untouched
+   because it never appears in a photo, only in UI. One grade, applied
+   everywhere, so the imagery reads as art-directed rather than sourced. */
+.studio-grade {
+  filter: saturate(0.85) contrast(0.92) brightness(1.14) grayscale(0.02);
+}
+
+/* Display face: Archivo's variable wdth axis maxed to stand in for
+   "Archivo Expanded" (Google does not publish Expanded as a separate
+   static family). Used instead of the raw font-variable utility so the
+   variation setting reliably applies everywhere the display face is used. */
+.font-display {
+  font-family: var(--font-archivo-expanded);
+  font-variation-settings: "wdth" 125;
+}
