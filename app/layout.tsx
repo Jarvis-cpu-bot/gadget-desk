@@ -28,22 +28,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nebulameshgate.info"),
-  title: "Nebula Meshgate — Verdicts before you pay",
+  metadataBase: new URL("https://verirevenue.info"),
+  title: "Veri Revenue — Verdicts before you pay",
   description:
     "Independent hardware reviews with the specs that actually change a buying decision. One verdict a week, straight to your inbox, before checkout not after.",
   openGraph: {
-    title: "Nebula Meshgate — Verdicts before you pay",
+    title: "Veri Revenue — Verdicts before you pay",
     description:
       "Independent hardware reviews with the specs that actually change a buying decision. One verdict a week, before checkout not after.",
     type: "website",
     locale: "en_US",
-    siteName: "Nebula Meshgate",
-    url: "https://nebulameshgate.info",
+    siteName: "Veri Revenue",
+    url: "https://verirevenue.info",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nebula Meshgate — Verdicts before you pay",
+    title: "Veri Revenue — Verdicts before you pay",
     description:
       "Independent hardware reviews with the specs that actually change a buying decision.",
   },
